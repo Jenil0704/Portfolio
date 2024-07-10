@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.name{
+    font-family: "Raleway";
+    font-weight: 500;
+    font-style: normal;
+}
+.projects, .aboutme, .one, .touch1, .boldtext{
+    font-family: "Anton SC";
+}
+.navname{
+    font-family: "DM Sans";
+}
+.project{
+    font-family: "General Sans";
+}
+/* Add this CSS to your existing styles or create a new CSS file */
+.link-with-animation {
+    position: relative;
+    font-size: 18px;
+    color: #e1e1e1;
+    cursor: pointer;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    text-decoration: none;
+  }
+  
+  .link-with-animation:focus,
+  .link-with-animation:hover {
+    color: #fff;
+  }
+  
+  .link-with-animation::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+  
+  .link-with-animation:focus::after,
+  .link-with-animation:hover::after {
+    width: 100%;
+    left: 0%;
+  }
+  /* Add this CSS to your existing styles or create a new CSS file */
+.link-with-border {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .link-with-border::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.2s ease-out;
+  }
+  
+  .link-with-border:hover::before {
+    width: 100%;
+  }
+  
+  /* Hide scrollbar for all elements */
+/* For WebKit browsers (Chrome, Safari, etc.) */
+/* For WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Hide the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded corners of the scrollbar handle */
+  border: 3px solid transparent; /* Padding around scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Size of the scrollbar */
+  scrollbar-color: #888 transparent; /* Color of the scrollbar handle and hide the track */
+}
+
+/* .transition-max-height {
+    transition: max-height 0.3s ease-out;
+  } */
