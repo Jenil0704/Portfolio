@@ -112,7 +112,7 @@ const AboutDetails = () => {
             </div> */}
           </div>
           <div className='right md:h-full md:w-[50%]  lg:h-full h-52 lg:w-[35%] w-full overflow-hidden rounded-lg'>
-            <img src="/images/Me2.jpg" className='image h-full w-full object-cover rounded-lg' alt="" />
+            <img src="/images/Me2.jpg" loading='lazy' className='image h-full w-full object-cover rounded-lg' alt="" />
           </div>
           
         </div>

@@ -89,7 +89,7 @@ const Landing = () => {
             <div className="right w-full md:w-1/4 lg:w-1/4 mt-5 md:mt-20 min-[425px]:-mt-2 lg:mt-12 flex flex-col justify-between">
                 <div className='w-full flex justify-center md:justify-end lg:justify-end overflow-hidden'>
                     <div className='img w-[55vw] h-[55vw] md:w-[22vw] md:h-[22vw] lg:w-[20vw] lg:h-[20vw] overflow-hidden rounded-full'>
-                        <img className='w-full h-full object-cover rounded-full' src="/images/Me.jpg" alt="Profile Picture" />
+                        <img className='w-full h-full object-cover rounded-full' loading='lazy' src="/images/Me.jpg" alt="Profile Picture" />
                     </div>
                 </div>
                 
