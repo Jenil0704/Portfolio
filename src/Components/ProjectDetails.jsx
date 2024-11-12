@@ -33,7 +33,7 @@ const ProjectDetails = () => {
         x : 700,
         duration : 0.4
     })
-    gsap.from('.card2 .left', {
+    gsap.from('.card2 .right', {
         scrollTrigger : {
             trigger : ".line1",
             start : "top 40%",
@@ -41,7 +41,7 @@ const ProjectDetails = () => {
         x : -700,
         duration : 0.4
     })
-    gsap.from('.card2 .right', {
+    gsap.from('.card2 .left', {
         scrollTrigger : {
             trigger : '.line1',
             start : "top 40%"
@@ -49,28 +49,20 @@ const ProjectDetails = () => {
         x : 700,
         duration : 0.4
     })
-    gsap.from('.card3 .left', {
-        scrollTrigger : {
-            trigger : ".line2",
-            start : "top 40%"
-        },
-        x : -700,
-        duration : 0.4
-    })
     gsap.from('.card3 .right', {
         scrollTrigger : {
             trigger : ".line2",
             start : "top 40%"
         },
-        x : 700,
+        x : -700,
         duration : 0.4
     })
-    gsap.from('.card4 .left', {
+    gsap.from('.card3 .left', {
         scrollTrigger : {
-            trigger : ".line3",
+            trigger : ".line2",
             start : "top 40%"
         },
-        x : -700,
+        x : 700,
         duration : 0.4
     })
     gsap.from('.card4 .right', {
@@ -78,10 +70,18 @@ const ProjectDetails = () => {
             trigger : ".line3",
             start : "top 40%"
         },
+        x : -700,
+        duration : 0.4
+    })
+    gsap.from('.card4 .left', {
+        scrollTrigger : {
+            trigger : ".line3",
+            start : "top 40%"
+        },
         x : 700,
         duration : 0.4
     })
-    gsap.from('.card5 .left', {
+    gsap.from('.card5 .right', {
         scrollTrigger : {
             trigger : ".line4",
             start : "top 40%"
@@ -89,9 +89,25 @@ const ProjectDetails = () => {
         x : -700,
         duration : 0.4
     })
-    gsap.from('.card5 .right', {
+    gsap.from('.card5 .left', {
         scrollTrigger : {
             trigger : ".line4",
+            start : "top 40%"
+        },
+        x : 700,
+        duration : 0.4
+    })
+    gsap.from('.card6 .right', {
+        scrollTrigger : {
+            trigger : ".line5",
+            start : "top 40%"
+        },
+        x : -700,
+        duration : 0.4
+    })
+    gsap.from('.card6 .left', {
+        scrollTrigger : {
+            trigger : ".line5",
             start : "top 40%"
         },
         x : 700,
@@ -105,11 +121,40 @@ const ProjectDetails = () => {
                 {/* card 1 */}
                 <div className='card1 w-full min-w-full h-auto flex flex-col lg:flex-row gap-10 overflow-hidden'>
                     <div className='left w-full md:h-56 lg:w-1/2 h-48 lg:h-full rounded-lg overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/images/posthub.jpg" alt="" />
+                        <img className='w-full h-full object-cover' src="/images/image.png" alt="" />
                     </div>
                     <div className='right w-full lg:w-1/2  h-full overflow-hidden'>
                         <div className='flex items-center md:gap-5 gap-3 lg:gap-5'>
                             <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>01</h1>
+                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>Brain Tumor Detection App</h1>
+                        </div>
+                        <div>
+                            <div className='flex flex-wrap gap-3 lg:gap-5 mt-5 '>
+                                {["Python", "Flask", "Machine Learning"].map((item,index)=>{
+                                    return(
+                                        <div className='py-1 px-4 bg-[#F3F4F1]/90 rounded-md flex items-center justify-center'>
+                                            <h1 key={index} className='text-black'>{item}</h1>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <p className='mt-7 lg:mt-5 text-justify lg:leading-[2vw] text-md md:text-[2.3vw] lg:text-[1.2vw]'>
+                            This project is a web-based application developed using Python, Flask, and machine learning to detect brain tumors from MRI scan images. The primary objective is to classify MRI scans into one of four categories: Glioma, Meningioma, No Tumor, and Pituitary Tumor. Additionally, users can book an appointment by providing the necessary details. The application also includes a quiz feature that allows users to learn about the symptoms of brain tumors. 
+                            </p>
+                            <div className='mt-7 flex flex-row gap-5'>
+                            <a href='https://github.com/Jenil0704/Brain-Tumor-Detection-Project' target='_blank' className='flex items-center justify-center gap-2 py-2 px-4 bg-[#0F181A] rounded-md'> <span className='flex items-center justify-center'><FaGithub /></span> GitHub Link</a>
+                            {/* 2b1524 */}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='line1 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
+
+                {/* card 2 */}
+                <div className='card2 w-full min-w-full h-auto flex flex-col lg:flex-row gap-10 overflow-hidden'>
+                <div className='right w-full lg:w-1/2  h-full overflow-hidden'>
+                        <div className='flex items-center md:gap-5 gap-3 lg:gap-5'>
+                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>02</h1>
                             <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>PostHub</h1>
                         </div>
                         <div>
@@ -131,15 +176,21 @@ const ProjectDetails = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='left w-full md:h-56 lg:w-1/2 h-48 lg:h-full rounded-lg overflow-hidden'>
+                        <img className='w-full h-full object-cover' src="/images/posthub.jpg" alt="" />
+                    </div>
+                    
                 </div>
-
-                <div className='line1 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
+                <div className='line2 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
                 
-                {/* card 2 */}
-                <div className='card2 w-full min-w-full h-auto  flex flex-col-reverse lg:flex-row gap-10 overflow-hidden'>
+                {/* card 3 */}
+                <div className='card3 w-full min-w-full h-auto  flex flex-col-reverse lg:flex-row gap-10 overflow-hidden'>
+                    <div className='right w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden'>
+                        <img className='w-full h-full object-cover' src="/images/quickposts.jpg" alt="" />
+                    </div>
                     <div className='left w-full lg:w-1/2 h-full '>
                         <div className='flex items-center md:gap-5 gap-3 lg:gap-5'>
-                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>02</h1>
+                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>03</h1>
                             <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>BlogPosts</h1>
                         </div>
                         <div>
@@ -160,22 +211,14 @@ const ProjectDetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='right w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/images/quickposts.jpg" alt="" />
-                    </div>
                 </div>
+                <div className='line3 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
                 
-                
-                <div className='line2 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
-                
-                {/* card 3 */}
-                <div className='card3 w-full min-w-full h-auto  flex flex-col lg:flex-row gap-10 overflow-hidden'>
-                    <div className='left w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/images/ochi.jpg" alt="" />
-                    </div>
+                {/* card 4 */}
+                <div className='card4 w-full min-w-full h-auto  flex flex-col lg:flex-row gap-10 overflow-hidden'>
                     <div className='right w-full lg:w-1/2 h-full '>
                         <div className='flex items-center md:gap-5 gap-3 lg:gap-5'>
-                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>03</h1>
+                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>04</h1>
                             <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>Ochi Clone</h1>
                         </div>
                         <div>
@@ -196,16 +239,20 @@ const ProjectDetails = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='left w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden'>
+                        <img className='w-full h-full object-cover' src="/images/ochi.jpg" alt="" />
+                    </div>
                 </div>
-                
+                <div className='line4 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
 
-                <div className='line3 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
-
-                {/* card 4 */}
-                <div className='card4 w-full min-w-full h-auto  flex flex-col-reverse lg:flex-row gap-10 overflow-hidden'>
+                {/* card 5 */}
+                <div className='card5 w-full min-w-full h-auto  flex flex-col-reverse lg:flex-row gap-10 overflow-hidden'>
+                    <div className='right w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden'>
+                        <img className='w-full h-full object-cover' src="/images/significo.jpg" alt="" />
+                    </div>
                     <div className='left w-full lg:w-1/2 h-full'>
                         <div className='flex items-center gap-3 md:gap-5 lg:gap-5'>
-                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>04</h1>
+                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>05</h1>
                             <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>Significo Clone</h1>
                         </div>
                         <div>
@@ -226,22 +273,14 @@ const ProjectDetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='right w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden'>
-                        <img className='w-full h-full object-cover' src="/images/significo.jpg" alt="" />
-                    </div>
-                    
                 </div>
-                
-                <div className='line4 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
+                <div className='line5 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
 
-                {/* card 5 */}
-                <div className='card5 w-full min-w-full h-auto  flex flex-col lg:flex-row gap-10 overflow-hidden'>
-                    <div className='left w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden bg-green-900'>
-                        <img className='w-full h-full object-cover' src="/images/picture.jpg" alt="" />
-                    </div>
-                    <div className='right w-full lg:w-1/2 h-full'>
+                {/* card 6 */}
+                <div className='card6 w-full min-w-full h-auto  flex flex-col lg:flex-row gap-10 overflow-hidden'>
+                <div className='right w-full lg:w-1/2 h-full'>
                         <div className='flex items-center gap-3 lg:gap-5'>
-                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>05</h1>
+                            <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>06</h1>
                             <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>TwinScreen</h1>
                         </div>
                         <div>
@@ -262,6 +301,10 @@ const ProjectDetails = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='left w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden bg-green-900'>
+                        <img className='w-full h-full object-cover' src="/images/picture.jpg" alt="" />
+                    </div>
+                    
                 </div>
                 {/* <div className='card5 w-full min-w-full h-auto  flex flex-col md:flex-row gap-10 overflow-hidden'>
                     <div className='left w-full md:w-1/2 h-48 md:h-full rounded-lg overflow-hidden'>
