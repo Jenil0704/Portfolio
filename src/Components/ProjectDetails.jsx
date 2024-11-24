@@ -151,7 +151,7 @@ const ProjectDetails = () => {
                 <div className='line1 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
 
                 {/* card 2 */}
-                <div className='card2 w-full min-w-full h-auto flex flex-col lg:flex-row gap-10 overflow-hidden'>
+                <div className='card2 w-full min-w-full h-auto flex flex-col-reverse lg:flex-row gap-10 overflow-hidden'>
                 <div className='right w-full lg:w-1/2  h-full overflow-hidden'>
                         <div className='flex items-center md:gap-5 gap-3 lg:gap-5'>
                             <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>02</h1>
@@ -184,7 +184,7 @@ const ProjectDetails = () => {
                 <div className='line2 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
                 
                 {/* card 3 */}
-                <div className='card3 w-full min-w-full h-auto  flex flex-col-reverse lg:flex-row gap-10 overflow-hidden'>
+                <div className='card3 w-full min-w-full h-auto  flex flex-col lg:flex-row gap-10 overflow-hidden'>
                     <div className='right w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden'>
                         <img className='w-full h-full object-cover' src="/images/quickposts.jpg" alt="" />
                     </div>
@@ -215,7 +215,7 @@ const ProjectDetails = () => {
                 <div className='line3 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
                 
                 {/* card 4 */}
-                <div className='card4 w-full min-w-full h-auto  flex flex-col lg:flex-row gap-10 overflow-hidden'>
+                <div className='card4 w-full min-w-full h-auto  flex flex-col-reverse lg:flex-row gap-10 overflow-hidden'>
                     <div className='right w-full lg:w-1/2 h-full '>
                         <div className='flex items-center md:gap-5 gap-3 lg:gap-5'>
                             <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>04</h1>
@@ -246,7 +246,7 @@ const ProjectDetails = () => {
                 <div className='line4 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
 
                 {/* card 5 */}
-                <div className='card5 w-full min-w-full h-auto  flex flex-col-reverse lg:flex-row gap-10 overflow-hidden'>
+                <div className='card5 w-full min-w-full h-auto  flex flex-col lg:flex-row gap-10 overflow-hidden'>
                     <div className='right w-full lg:w-1/2 md:h-56 h-48 lg:h-full rounded-lg overflow-hidden'>
                         <img className='w-full h-full object-cover' src="/images/significo.jpg" alt="" />
                     </div>
@@ -277,7 +277,7 @@ const ProjectDetails = () => {
                 <div className='line5 w-full h-[0.1px] bg-white/15 mt-20 mb-20'></div>
 
                 {/* card 6 */}
-                <div className='card6 w-full min-w-full h-auto  flex flex-col lg:flex-row gap-10 overflow-hidden'>
+                <div className='card6 w-full min-w-full h-auto  flex flex-col-reverse lg:flex-row gap-10 overflow-hidden'>
                 <div className='right w-full lg:w-1/2 h-full'>
                         <div className='flex items-center gap-3 lg:gap-5'>
                             <h1 className='text-[6vw] md:text-[3.5vw] lg:text-[2vw] font-medium'>06</h1>
