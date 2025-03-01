@@ -32,23 +32,7 @@ function ContactDetails() {
         }
         event.target.reset();
       };
-    // const form = useRef();
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
     
-    //     emailjs
-    //       .sendForm('service_otgbgaj', 'template_nmc6ga9', form.current, {
-    //         publicKey: '0BUZyZmmhCpDxWturq3Os',
-    //       })
-    //       .then(
-    //         () => {
-    //           console.log('SUCCESS!');
-    //         },
-    //         (error) => {
-    //           console.log('FAILED...', error.text);
-    //         },
-    //       );
-    //   };
     useGSAP(()=>{
         var tl = gsap.timeline();
         gsap.from('.contactme',{
