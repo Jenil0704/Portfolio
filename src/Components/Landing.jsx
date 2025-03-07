@@ -107,7 +107,7 @@ const Landing = () => {
                 </div>
             </div>  
             <div className="btn resume">
-            <a href="https://drive.google.com/file/d/1MVuUk4yWNJJ13HxzfM2lCDMdWJ8VQTDG/view" target='_blank' className='flex items-center justify-center w-fit py-1.5 px-6 bg-white rounded-md text-lg md:text-[2vw] lg:text-[1.2vw] font-semibold cursor-pointer'>
+            <a href="https://drive.google.com/file/d/10Pw6yaD5-_JDdReSz1FwS1pT3ZQDlq1F/view" target='_blank' className='flex items-center justify-center w-fit py-1.5 px-6 bg-white rounded-md text-lg md:text-[2vw] lg:text-[1.2vw] font-semibold cursor-pointer'>
                 <span className='flex items-center justify-center text-xl'>
                     <MdOutlineFileDownload/>
                 </span>
